@@ -1,4 +1,4 @@
-module github.com/hexlet-components/hxlt
+module github.com/hexlet-components/hxlt/v3
 
 go 1.22.5
 

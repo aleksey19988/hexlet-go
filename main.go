@@ -1,13 +1,15 @@
-package hxlt
+package main
 
 import (
-	"github.com/samber/lo"
+	"fmt"
+	"github.com/hexlet-components/hxlt/hxlt"
 )
 
-func isEven(x int, _ int) bool {
-	return x%2 == 0
-}
+func main() {
+	fmt.Println("It's Hexlet!")
 
-func Even(vals []int) []int {
-	return lo.Filter[int](vals, isEven)
+	nums := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}
+	evens := hxlt.Even(nums)
+
+	fmt.Println(evens)
 }
